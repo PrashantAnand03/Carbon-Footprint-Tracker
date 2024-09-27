@@ -1,0 +1,81 @@
+.footer {
+    width: 100vw;
+    margin-top: 40px;
+}
+
+.footerSec {
+    bottom: 0;
+    margin: 10px auto 0;
+    color: white;
+    background-color: #262626;
+}
+
+.footerContainer {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center;
+}
+
+.footerSlide {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex: 1 1 200px; /* Allow items to grow and shrink */
+}
+
+.footerSlide h3 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footerSlide a {
+    line-height: 2.5;
+    color: white;
+    text-decoration: none; /* Ensure links do not have underlines */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect for all links except phone and map links */
+.footerSlide a:not(.phone-link):not(.map-link):hover {
+    color: #007bff; /* Change color to blue on hover */
+    text-decoration: underline; /* Add underline on hover for better UX */
+}
+
+.footerSec p {
+    padding: 20px 0;
+    text-align: center;
+    color: rgb(255, 190, 190);
+    width: 100%; /* Ensure copyright text takes full width */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .footerSlide {
+        margin: 10px 0; /* Reduce margin for better spacing on mobile */
+    }
+
+    .footerSlide h3 {
+        font-size: 18px; /* Slightly reduce font size for smaller screens */
+    }
+
+    .footerSlide a {
+        line-height: 2; /* Adjust line height for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .footerSlide h3 {
+        font-size: 16px; /* Further reduce font size for very small screens */
+    }
+
+    .footerSec p {
+        font-size: 12px; /* Smaller font size for copyright text */
+    }
+}

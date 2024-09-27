@@ -1,0 +1,114 @@
+/* Base styles remain unchanged */
+#about {
+  padding: 0;
+  color: #ababab;
+  top: 260px;
+}
+
+.aboutSec {
+  margin-top: 10px;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.aboutContainer {
+  margin: 10px 0;
+}
+
+.aboutVideo {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+  cursor: pointer; /* Pointer cursor for the video placeholder */
+  margin: 0 auto; /* Center container */
+}
+
+.aboutContainer iframe {
+  margin: 10px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.aboutWrap {
+  display: flex;
+  flex-direction: row; /* Default layout */
+}
+
+.aboutWrap img {
+  margin: 20px 20px;
+  border-radius: 5px;
+}
+
+.aboutContainer h3 {
+  margin-top: 20px;
+  padding: 10px 20px 0;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.aboutContainer p {
+  padding: 5px 50px 5px 20px;
+}
+
+.aboutContainer span {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* Styles for the clickable link */
+.load-video-link {
+  color:#0c0101; /* Change link color to blue */
+  text-decoration: underline; /* Underline the link */
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-weight: bold; /* Make the link bold */
+}
+
+/* Optional: Change link color on hover */
+.load-video-link:hover {
+  color: #007bff; /* Change to a darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  /* Tablet */
+  .aboutWrap {
+    flex-direction: column; /* Stack images and content */
+    align-items: center; /* Center content */
+  }
+
+  .aboutContainer p {
+    padding: 5px 20px; /* Reduce padding on smaller screens */
+  }
+
+  .aboutContainer h3 {
+    font-size: 22px; /* Adjust font size */
+  }
+
+  .aboutContainer iframe {
+    width: 100%; /* Make video responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile */
+  .aboutContainer p {
+    padding: 5px 10px; /* Further reduce padding */
+  }
+
+  .aboutContainer h3 {
+    font-size: 20px; /* Further adjust font size */
+  }
+
+  .aboutWrap img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Adjust margin */
+  }
+}
+
+
+
+
+

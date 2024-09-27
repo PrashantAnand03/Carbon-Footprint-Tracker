@@ -1,0 +1,190 @@
+.tracker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.trackerSec {
+    width: 100%;
+    max-width: 1200px;  /* Restrict the max-width for larger screens */
+    height: auto;
+    position: relative;
+}
+
+.iframe-container {
+    width: 100%;  /* Full width for the container */
+    height: 1600px; /* Set a larger height for iframe container */
+    position: relative; /* Ensure it is positioned correctly */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+iframe {
+    width: 100%;  /* Set iframe to full width */
+    height: 100%; /* Full height of its container */
+    border: none;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure spinner takes the iframe's space */
+}
+
+/* For Laptop screens with a width between 1024px and 1440px */
+@media screen and (max-width: 1440px) {
+    .trackertitle {
+        margin-left: 60px;
+    }
+}
+
+/* General styles for larger screens */
+@media screen and (min-width: 1025px) {
+    .trackerSec {
+        max-width: 1200px; /* Restrict max width */
+        margin: auto; /* Center the tracker section */
+    }
+
+    .iframe-container {
+        width: 90%; /* Use 90% of the available width */
+        height: 440px; /* Set height for iframe container */
+        margin: auto; /* Center align */
+    }
+}
+@media screen and (max-width: 1024px) and (min-height: 600px) {
+    .trackertitle {
+        margin-left: 12px; /* Adjust title margin for smaller screens */
+    }
+}
+
+/* Adjustments for Tablet screens (768px and below) */
+@media screen and (max-width: 768px) {
+    .trackerSec {
+        max-width: 90%;  /* Adjust for tablet */
+        height: auto;   /* Let height adjust automatically */
+        margin: auto; /* Center align */
+    }
+
+    .iframe-container {
+        width: 100%;  /* Full width for iframe container */
+        height: 600px;   /* Set height for iframe container */
+    }
+}
+@media screen and (max-width: 786px) and (min-height: 1024px) {
+    .trackertitle {
+        margin-left: 12px; /* Adjust title margin for smaller screens */
+    }
+}
+@media screen and (max-width: 820px) and (min-height: 1180px) {
+    .trackertitle {
+        margin-left: 12px; /* Adjust title margin for smaller screens */
+    }
+}
+@media screen and (max-width: 1024px) and (min-height: 1366px) {
+    .trackertitle {
+        margin-left: 12px; /* Adjust title margin for smaller screens */
+    }
+}
+/* Adjustments for Mobile Desktop View (576px to 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 576px) {
+    .trackerSec {
+        max-width: 95%;  /* Slightly reduce width for mobile desktops */
+        height: auto;   /* Let height adjust automatically */
+        margin: auto; /* Center align */
+    }
+
+    .iframe-container {
+        width: 100%;  /* Full width for iframe container */
+        height: 800px; /* Set an appropriate height for mobile desktop views */
+    }
+}
+@media screen and (max-width: 540px) and (min-height: 720px) {
+    .trackertitle {
+        margin-left: 12px; /* Adjust title margin for smaller screens */
+    }
+}
+@media screen and (max-width: 853px) and (min-height: 1280px) {
+    .trackertitle {
+        margin-left: 12px; /* Adjust title margin for smaller screens */
+    }
+}
+@media screen and (max-width: 414px) and (min-height: 896px) {
+    .trackertitle {
+        margin-left: 12px; /* Adjust title margin for smaller screens */
+    }
+    .trackerSec {
+        height: auto; /* Automatically adjust height */
+        padding-bottom: 100px; /* Keep padding for scroll space */
+        width: calc(100vw + 0px); /* Increase width to 100vw plus additional space */
+        margin: -10px 0; /* Adjust margins to negative to extend beyond viewport */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .iframe-container {
+        width: 100%;  /* Ensure full width for the container */
+        height: 2000px;  /* Increase height for better visibility */
+        position: relative;
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    iframe {
+        width: 100%;  /* Ensure iframe takes full width */
+        height: 100%; /* Ensure iframe adjusts to the container’s height */
+        min-height: 667px; /* Ensure at least the screen height is covered */
+        border: none;
+    }
+}
+
+/* Specific adjustments for smaller mobile screens (375x667) */
+@media screen and (max-width: 375px) and (min-height: 667px) {
+    .trackertitle {
+        margin-left: 12px; /* Adjust title margin for smaller screens */
+    }
+    
+    .trackerSec {
+        height: auto; /* Automatically adjust height */
+        padding-bottom: 100px; /* Keep padding for scroll space */
+        width: calc(100vw + 40px); /* Increase width to 100vw plus additional space */
+        margin: -10px 0; /* Adjust margins to negative to extend beyond viewport */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .iframe-container {
+        width: 100%;  /* Ensure full width for the container */
+        height: 2000px;  /* Increase height for better visibility */
+        position: relative;
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    iframe {
+        width: 100%;  /* Ensure iframe takes full width */
+        height: 100%; /* Ensure iframe adjusts to the container’s height */
+        min-height: 667px; /* Ensure at least the screen height is covered */
+        border: none;
+    }
+}
+
+/* General mobile responsiveness for screens smaller than 576px */
+@media screen and (max-width: 576px) {
+    .trackerSec {
+        height: auto; /* Let the tracker section adjust automatically */
+        padding-bottom: 50px; /* Add some padding for mobile scrolling */
+        width: calc(100vw + 0px); /* Increase width to 100vw plus additional space */
+        margin: -10px 0; /* Adjust margins to negative to extend beyond viewport */
+    }
+
+    .iframe-container {
+        width: 100%;  /* Full width */
+        height: 2200px; /* Increased height for better visibility */
+        aspect-ratio: 9 / 16; /* Maintain an aspect ratio for responsiveness */
+        overflow-y: auto; /* Enable scrolling if needed */
+    }
+
+    iframe {
+        width: 100%;  /* Full width iframe */
+        height: 100%; /* Full height of its container */
+        min-height: 667px; /* Ensure it adjusts properly for mobile */
+    }
+}

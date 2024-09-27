@@ -1,0 +1,210 @@
+.nav {
+    top: 0;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: white;
+    z-index: 10;
+}
+
+.left {
+    margin-left: 80px;
+    font-weight: 1000;
+}
+.left h3 {
+    letter-spacing: 1px;
+    color: rgb(32, 32, 215);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.left p {
+    margin-top: -3px;
+    font-size: 10px;
+    color: rgb(145, 144, 144);
+    font-weight: 800;
+    text-align: center;
+}
+.left span {
+    font-size: 10px;
+    color: gold;
+    font-weight: 800;
+}
+
+.middle {
+    margin-left: 200px;
+    display: flex;
+    list-style: none;
+}
+.middle li {
+    margin-right: 80px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.middlelink {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.middlelink:hover {
+    color:#007bff;
+}
+
+.right {
+    width: 200px;
+    display: flex;
+    margin-right: 60px;
+    align-items: center;
+}
+
+.right-img {
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+.right2 {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.right2 li {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.rightlink {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.rightlink:hover {
+    color: #007bff;
+}
+
+/* Hamburger Styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px; /* Margin to the right */
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: black; /* Color of hamburger bars */
+    margin: 3px 0; /* Space between bars */
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    position: absolute; /* Position it absolutely */
+    top: 50px; /* Adjust based on your navbar height */
+    right: 0; /* Align to the right */
+    background-color: white; /* Background color of the menu */
+    width: 200px; /* Width of the sidebar */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Optional shadow for effect */
+    z-index: 9; /* Ensure it appears above other content */
+    padding: 10px; /* Add padding */
+}
+
+.mobile-links {
+    list-style: none; /* Remove bullets from the list */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.mobile-links li {
+    margin: 10px 0; /* Space between links */
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .middle {
+        margin-left: 50px; /* Reduce margin to fit better on smaller desktop screens */
+    }
+
+    .middle li {
+        margin-right: 40px; /* Reduce spacing between items */
+    }
+
+    .left {
+        margin-left: 30px; /* Adjust left margin */
+    }
+
+    .right {
+        margin-right: 30px; /* Adjust right margin */
+    }
+
+    .right-img {
+        width: 35px; /* Resize profile image */
+        height: 35px;
+    }
+
+    .right2 li {
+        font-size: 16px; /* Slightly reduce font size */
+        margin-right: 20px; /* Adjust spacing for smaller screens */
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 940px) {
+    .middle {
+        display: none; /* Hide middle links on small screens */
+    }
+    .hamburger {
+        display: flex; /* Show hamburger icon on small screens */
+    }
+    .hamburger-menu {
+        display: block; /* Show hamburger menu */
+    }
+    .nav {
+        padding: 0 10px; /* Adjust navbar padding */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for Navbar */
+    .nav {
+        padding: 10px 10px; /* Reduce padding for mobile view */
+    }
+
+    /* Adjust the Left Section */
+    .left {
+        margin-left: 10px;
+    }
+
+    .left h3, .left p {
+        font-size: 18px; /* Reduce font size on smaller screens */
+    }
+
+    /* Adjust Hamburger and Middle Links */
+    .hamburger {
+        display: flex; /* Show hamburger icon for small screens */
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .middle {
+        display: none; /* Hide middle links on mobile view */
+    }
+    /* Adjust right section */
+    .right {
+        margin-right: 10px;
+    }
+
+    .right2 li {
+        font-size: 16px; /* Adjust font size for better fit */
+        margin-right: 15px; /* Reduce spacing between login/register links */
+    }
+
+    .right-img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px; /* Adjust image size and margin */
+    }
+}

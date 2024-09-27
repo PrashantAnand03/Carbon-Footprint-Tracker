@@ -1,0 +1,43 @@
+.workflowSec {
+  margin: 10px auto;
+  justify-content: space-between;
+}
+
+.workflowContainer{
+  margin: 20px;
+  padding: 0 30px;
+  background-color: white;
+}
+.workflowContainer h2{
+  margin-top: 20px;
+}
+.workflowContainer1 p{
+  margin-top: 5px;
+}
+
+.totracker {
+  text-align: center;
+}
+.bt-txt{
+  color: white;
+}
+.box-brd {
+  border: 3px solid #007bff; /* Initial border color */
+  transition: border-color 0.3s; /* Smooth transition effect */
+}
+
+.box-brd:hover {
+  border-color: #000; /* Change border color on hover */
+}
+.workflowSec button {
+  margin: 20px 0;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #0c0101;
+  list-style: none;
+}
+
+.workflowSec button:hover {
+  color: white;
+  background-color: #007bff;
+}

@@ -1,0 +1,116 @@
+.register {
+    height: calc(100vh - 70px);
+    margin: 10px;
+    display: flex; /* Ensure flexbox layout for centering */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-image: url("register.jpg");
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    padding: 20px; /* Add some padding for smaller screens */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.registerSec {
+    margin: 20px auto; /* Reduce margin for smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+    background-image: url("register.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%; /* Make it responsive */
+    max-width: 400px; /* Limit maximum width for larger screens */
+}
+
+.regisTitle {
+    font-size: 50px; /* Base font size */
+}
+
+.regisForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.regisForm > label {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.regisInput {
+    padding: 10px;
+    background-color: beige;
+    border: none;
+}
+
+.regisBut {
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(2, 195, 195);
+    color: black;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.regisLoginBut {
+    position: relative; /* Change to relative */
+    margin-top: 10px; /* Adjust margin */
+    padding: 10px;
+    color: white;
+    background-color: #ff004f;
+    border-radius: 10px;
+    border: none;
+}
+
+.toLogin {
+    color: black;
+    font-weight: 600;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    .registerSec {
+        padding: 15px; /* Less padding for smaller screens */
+    }
+
+    .regisTitle {
+        font-size: 40px; /* Smaller title for tablet screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .registerSec {
+        padding: 10px; /* Less padding for mobile screens */
+        margin: 10px; /* Reduce margin for smaller screens */
+    }
+
+    .regisTitle {
+        font-size: 30px; /* Smaller title for mobile screens */
+    }
+
+    .regisInput {
+        font-size: 14px; /* Adjust input font size for smaller screens */
+    }
+
+    .regisBut, .regisLoginBut {
+        padding: 8px; /* Smaller button padding */
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .regisTitle {
+        font-size: 24px; /* Even smaller title for very small screens */
+    }
+
+    .regisInput {
+        font-size: 12px; /* Smaller input font size */
+    }
+}
