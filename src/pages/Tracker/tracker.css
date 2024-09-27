@@ -26,12 +26,20 @@ iframe {
     border: none;
 }
 
+/* Spinner CSS for both Laptop and Mobile */
 .spinner-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Ensure spinner takes the iframe's space */
+    position: absolute; /* Ensure it overlays the iframe container */
+    top: 50%;  /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Ensure it is perfectly centered */
+    z-index: 10;  /* Ensure it appears above the iframe */
+    height: auto; /* Adapt height automatically */
+    width: auto;  /* Adapt width automatically */
 }
+
 
 /* For Laptop screens with a width between 1024px and 1440px */
 @media screen and (max-width: 1440px) {
@@ -204,6 +212,13 @@ iframe {
         margin-left: 12px; /* Adjust title margin for smaller screens */
         font-size: 10px;
     }
+    .spinner-container {
+        top: 15%;  /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Ensure it's centered on mobile */
+        height: auto;
+        width: auto;
+    }
     .trackerSec {
         height: auto; /* Let the tracker section adjust automatically */
         padding-bottom: 50px; /* Add some padding for mobile scrolling */
@@ -281,3 +296,14 @@ iframe {
     }
 }
 
+
+/* For larger screens like laptops */
+@media screen and (min-width: 577px) {
+    .spinner-container {
+        top: 50%;  /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Ensure it's centered on larger screens */
+        height: auto;
+        width: auto;
+    }
+}
