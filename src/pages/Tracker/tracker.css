@@ -124,7 +124,7 @@ iframe {
 
     .iframe-container {
         width: 100%;  /* Ensure full width for the container */
-        height: 2000px;  /* Increase height for better visibility */
+        height: 1100px;  /* Increase height for better visibility */
         position: relative;
         overflow-y: auto; /* Enable vertical scrolling */
     }
@@ -132,7 +132,38 @@ iframe {
     iframe {
         width: 100%;  /* Ensure iframe takes full width */
         height: 100%; /* Ensure iframe adjusts to the container’s height */
-        min-height: 667px; /* Ensure at least the screen height is covered */
+        min-height: 367px; /* Ensure at least the screen height is covered */
+        border: none;
+    }
+}
+@media screen and (max-width: 412px) and (min-height: 915px) {
+    .trackertitle {
+        margin-left: 120px; /* Adjust title margin for smaller screens */
+    }
+}
+@media screen and (max-width: 430px) and (min-height: 932px) {
+    .trackertitle {
+        margin-left: 12px; /* Adjust title margin for smaller screens */
+    }
+    .trackerSec {
+        height: auto; /* Automatically adjust height */
+        padding-bottom: 100px; /* Keep padding for scroll space */
+        width: calc(100vw + 0px); /* Increase width to 100vw plus additional space */
+        margin: -10px 0; /* Adjust margins to negative to extend beyond viewport */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .iframe-container {
+        width: 100%;  /* Ensure full width for the container */
+        height: 1400px;  /* Increase height for better visibility */
+        position: relative;
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    iframe {
+        width: 100%;  /* Ensure iframe takes full width */
+        height: 100%; /* Ensure iframe adjusts to the container’s height */
+        min-height: 367px; /* Ensure at least the screen height is covered */
         border: none;
     }
 }
@@ -141,6 +172,7 @@ iframe {
 @media screen and (max-width: 375px) and (min-height: 667px) {
     .trackertitle {
         margin-left: 12px; /* Adjust title margin for smaller screens */
+        font-size: 10px;
     }
     
     .trackerSec {
@@ -153,7 +185,7 @@ iframe {
 
     .iframe-container {
         width: 100%;  /* Ensure full width for the container */
-        height: 2000px;  /* Increase height for better visibility */
+        height: 1100px;  /* Increase height for better visibility */
         position: relative;
         overflow-y: auto; /* Enable vertical scrolling */
     }
@@ -161,13 +193,17 @@ iframe {
     iframe {
         width: 100%;  /* Ensure iframe takes full width */
         height: 100%; /* Ensure iframe adjusts to the container’s height */
-        min-height: 667px; /* Ensure at least the screen height is covered */
+        min-height:367px; /* Ensure at least the screen height is covered */
         border: none;
     }
 }
 
 /* General mobile responsiveness for screens smaller than 576px */
 @media screen and (max-width: 576px) {
+    .trackertitle {
+        margin-left: 12px; /* Adjust title margin for smaller screens */
+        font-size: 10px;
+    }
     .trackerSec {
         height: auto; /* Let the tracker section adjust automatically */
         padding-bottom: 50px; /* Add some padding for mobile scrolling */
@@ -177,7 +213,7 @@ iframe {
 
     .iframe-container {
         width: 100%;  /* Full width */
-        height: 2200px; /* Increased height for better visibility */
+        height:1100px; /* Increased height for better visibility */
         aspect-ratio: 9 / 16; /* Maintain an aspect ratio for responsiveness */
         overflow-y: auto; /* Enable scrolling if needed */
     }
@@ -185,6 +221,63 @@ iframe {
     iframe {
         width: 100%;  /* Full width iframe */
         height: 100%; /* Full height of its container */
-        min-height: 667px; /* Ensure it adjusts properly for mobile */
+        min-height: 367px; /* Ensure it adjusts properly for mobile */
     }
 }
+@media screen and (max-width: 390px) and (min-height: 844px) {
+    .trackertitle {
+        margin-left: 12px; /* Adjust title margin for smaller screens */
+        font-size: 10px;
+    }
+    
+    .trackerSec {
+        height: auto; /* Automatically adjust height */
+        padding-bottom: 100px; /* Keep padding for scroll space */
+        width: calc(100vw + 0px); /* Increase width to 100vw plus additional space */
+        margin: -10px 0; /* Adjust margins to negative to extend beyond viewport */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .iframe-container {
+        width: 100%;  /* Ensure full width for the container */
+        height: 1300px;  /* Increase height for better visibility */
+        position: relative;
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    iframe {
+        width: 100%;  /* Ensure iframe takes full width */
+        height: 100%; /* Ensure iframe adjusts to the container’s height */
+        min-height:367px; /* Ensure at least the screen height is covered */
+        border: none;
+    }
+}
+@media screen and (max-width: 360px) and (min-height: 740px) {
+    .trackertitle {
+        margin-left: 12px; /* Adjust title margin for smaller screens */
+        font-size: 10px;
+    }
+    
+    .trackerSec {
+        height: auto; /* Automatically adjust height */
+        padding-bottom: 100px; /* Keep padding for scroll space */
+        width: calc(100vw + 0px); /* Increase width to 100vw plus additional space */
+        margin: -10px 0; /* Adjust margins to negative to extend beyond viewport */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .iframe-container {
+        width: 100%;  /* Ensure full width for the container */
+        height: 1300px;  /* Increase height for better visibility */
+        position: relative;
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    iframe {
+        width: 100%;  /* Ensure iframe takes full width */
+        height: 100%; /* Ensure iframe adjusts to the container’s height */
+        min-height:367px; /* Ensure at least the screen height is covered */
+        border: none;
+    }
+}
+
