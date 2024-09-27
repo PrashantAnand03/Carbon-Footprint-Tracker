@@ -46,6 +46,19 @@ iframe {
     .trackertitle {
         margin-left: 60px;
     }
+    .iframe-container {
+        width: 100%;  /* Ensure full width for the container */
+        height: 1600px;  /* Increase height for better visibility */
+        position: relative;
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    iframe {
+        width: 100%;  /* Ensure iframe takes full width */
+        height: 100%; /* Ensure iframe adjusts to the container’s height */
+        min-height: 830px; /* Ensure at least the screen height is covered */
+        border: none;
+    }
 }
 
 /* General styles for larger screens */
