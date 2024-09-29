@@ -112,3 +112,53 @@
 
 
 
+/* General Styles (laptop and larger screens) remain unchanged */
+
+/* Responsive Styles for Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Ensure no horizontal scrolling on mobile */
+  body, html {
+      overflow-x: hidden;
+  }
+
+  /* About container to be full width on mobile */
+  .aboutWrap, .aboutContainer, .aboutVideo {
+      width: 100%;
+      max-width: 100vw; /* Prevent overflow */
+      box-sizing: border-box;
+  }
+
+  /* Make images responsive on mobile */
+  .aboutWrap img {
+      max-width: 100%; /* Ensure images don't overflow */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0 auto; /* Center images */
+  }
+
+  /* Responsive video container */
+  .aboutVideo iframe {
+      width: 100%; /* Make video responsive */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Stack the content vertically on mobile */
+  .aboutWrap {
+      flex-direction: column;
+      align-items: center; /* Center the content */
+  }
+
+  /* Adjust padding for mobile */
+  .aboutContainer p {
+      padding: 5px 10px; /* Reduce padding for smaller screens */
+  }
+
+  /* Adjust heading font size for mobile */
+  .aboutContainer h3 {
+      font-size: 20px; /* Reduce font size for mobile */
+  }
+
+  /* Adjust margins for mobile */
+  .aboutWrap img {
+      margin: 10px 0; /* Reduce margin for smaller screens */
+  }
+}
